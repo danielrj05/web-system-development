@@ -1,0 +1,87 @@
+
+
+/* Page background color and font  */
+body {
+  color: #2B1A40;                                 /*dark purple*/
+  background-color: #F4F0FA;                      /*light purple*/
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+/* Header, main and footer (slides 9.8 - 9.12) */
+header {
+  color: #FDB927;                                 /*gold*/
+  background-color: #552583;                      /*purple*/
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px 40px;                             
+}
+
+footer {
+  color: #FDB927;                                
+  background-color: #552583;                      
+  padding: 10px;
+  text-align: center;
+}
+
+/* Links (slide 10.9) */
+a:link {
+  color: #552583;                                 
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8A5CC2;                                 
+}
+
+a:hover {
+  color: #D99A00;                                 /*dark gold*/
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FDB927;                                
+}
+
+/* List items*/
+li {
+  padding: 5px 10px;                              
+  margin-bottom: 5px;
+  border: 1px solid #FDB927;                     
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+/*card*/
+.card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px #C9B8E0;                 
+}
+
+
+/*Daniel*/
+
+/*Unordered list */
+ul {
+  list-style-type: disc;
+  background-color: #FFF4D6;                     
+  border: 2px solid #FDB927;                     
+  border-radius: 8px;
+  padding: 10px 10px 10px 40px;                   
+}
