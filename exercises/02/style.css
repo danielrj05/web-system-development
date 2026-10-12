@@ -1,0 +1,124 @@
+/* Page background color and font  */
+body {
+  color: #FDB927;                                 /* gold */
+  background-color: #1c1c1c;                      /* almost black */
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  margin: 0;                                      
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+  text-shadow:
+    0 0 20px #8A5CC2,
+    0 0 35px #8A5CC2;
+}
+
+
+header {
+  color: #FDB927;                                 /* gold */
+  background-color: #552583;                      /* purple */
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding: 20px;
+  border-width: 0.25em;
+  border-style: ridge;
+  border-color: #D99A00;                          /* dark gold */
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+main {
+  padding: 20px /*arriba y abajo*/ 40px /*izquierda y derecha*/;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+section {
+  width: 48%;
+}
+
+footer {
+  color: #FDB927;                                 /* gold */
+  background-color: #552583;                      /* purple */
+  padding: 10px;
+  text-align: center;
+}
+
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+
+.intro-text {
+  margin-left: 20px;
+}
+
+
+a:link {
+  color: #B794E6;                                
+}
+
+a:visited {
+  color: #8A5CC2;                                 /* medium purple */
+}
+
+a:hover {
+  color: #FDB927;                               
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FDB927;                                 /* gold */
+}
+
+/* List items */
+li {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border: 1px solid #FDB927;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Card */
+.card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px #FDB927;
+}
+
+
+/* Daniel */
+
+/* Unordered list */
+ul {
+  list-style-type: disc;
+  background-color: #1c1c1c;
+  border: 2px solid #FDB927;
+  border-radius: 8px;
+  padding: 10px 10px 10px 40px;
+}
+
+
+/* Gonzalo */
+
+/* Ordered list */
+ol {
+  list-style-type: upper-roman;                  
+  background-color: #1c1c1c;
+  border: 2px dashed #FDB927;                     
+  border-radius: 8px;
+  padding: 10px 10px 10px 50px;
+}
