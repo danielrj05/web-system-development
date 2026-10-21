@@ -1,0 +1,131 @@
+/* Every box includes its padding and border in its width */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background color and font */
+body {
+  color: #FFFFFF;                                 /* white */
+  background-color: #0d0d0d;                      /* black */
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  display: flex;                                  /* body is a flex container */
+  flex-direction: column;                         /* header and main one below the other */
+  align-items: center;                            /* centered horizontally */
+}
+
+/* Header */
+header {
+  width: 100%;
+  color: #0d0d0d;                                 /* black */
+  background-color: #4ADE80;                      /* bright green */
+  padding: 20px;
+  border-bottom: 4px solid #14532D;               /* dark green */
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Main content */
+main {
+  width: 100%;
+  max-width: 500px;                               /* never wider than 500px */
+  padding: 20px;
+}
+
+
+/* Form: labels and inputs stacked in a column */
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;                      /* almost black */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #14532D;                 /* dark green shadow */
+}
+
+label {
+  color: #4ADE80;                                 /* bright green */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Inputs and button don't take the page font by default */
+input, button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+}
+
+input {
+  color: #0d0d0d;
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #22C55E;                      /* medium green */
+  border-radius: 6px;
+}
+
+/* Add expense button */
+button {
+  color: #0d0d0d;                                 /* black */
+  background-color: #4ADE80;                      /* bright green */
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #22C55E;                      /* medium green */
+  border-radius: 6px;
+  cursor: pointer;                                /* hand cursor over the button */
+}
+
+button:hover {
+  background-color: #22C55E;                      /* medium green */
+}
+
+button:active {
+  color: #FFFFFF;
+  background-color: #14532D;                      /* dark green */
+}
+
+
+/* Error message */
+#error {
+  color: #FF6B6B;                                 /* light red */
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* List of expenses */
+ul {
+  list-style-type: none;                          /* no bullets */
+  padding: 0;
+}
+
+li {
+  background-color: #1a1a1a;                      /* almost black */
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-left: 4px solid #4ADE80;                 /* bright green */
+  border-radius: 6px;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+
+/* Total: the last <p> inside <main> */
+main p:last-of-type {
+  font-size: 1.3em;
+  text-align: right;
+  padding-top: 15px;
+  border-top: 2px solid #14532D;                  /* dark green */
+}
+
+#total {
+  color: #4ADE80;                                 /* bright green */
+  font-weight: bold;
+}
