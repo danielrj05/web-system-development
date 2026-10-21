@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--Page title-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Budget Tracker</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<!--Header-->
+		<header>
+			<h1>Budget Tracker</h1>
+		</header>
+
+		<main>
+			<!--Form to add a new expense-->
+			<form id="expense-form" novalidate>
+				<label for="expense-name">Expense</label>
+				<input type="text" id="expense-name" name="expense-name" placeholder="Coffee">
+
+				<label for="expense-amount">Amount (€)</label>
+				<input type="number" id="expense-amount" name="expense-amount" step="0.01" placeholder="2.50">
+
+				<button type="submit">Add expense</button>
+			</form>
+
+			<!--Error message -->
+			<p id="error"></p>
+
+			<!--List of expenses -->
+			<ul id="expense-list"></ul>
+
+			<!--Total amount spent-->
+			<p>Total: <span id="total">0.00</span> €</p>
+		</main>
+
+		<script type="module" src="main.js"></script>
+	</body>
+
+</html>
