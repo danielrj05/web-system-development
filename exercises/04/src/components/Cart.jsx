@@ -22,7 +22,7 @@ export default function Cart() {
     event.preventDefault();
 
     // Empty name: do nothing
-    if (name.trim() === '') {
+    if (name.trim() === '' || cartItems.length === 0) {
       return;
     }
 
