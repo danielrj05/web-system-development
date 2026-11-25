@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books API</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Books API</h1>
+      <p>A simple <strong>REST API</strong> built with <em>Express</em> to manage a list of books.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Welcome</h2>
+        <p>
+          The books are stored <strong>in memory</strong>, so when the server restarts the list goes
+          back to its original state.
+        </p>
+      </section>
+
+      <section>
+        <h2>Endpoints</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Path</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>GET</code></td>
+              <td><a href="/books"><code>/books</code></a></td>
+              <td>Returns the full list of books</td>
+            </tr>
+            <tr>
+              <td><code>POST</code></td>
+              <td><code>/books</code></td>
+              <td>Adds a new book (<code>title</code> and <code>author</code> in the body)</td>
+            </tr>
+            <tr>
+              <td><code>GET</code></td>
+              <td><a href="/books/1"><code>/books/:id</code></a></td>
+              <td>Returns a single book by its id</td>
+            </tr>
+            <tr>
+              <td><code>DELETE</code></td>
+              <td><code>/books/:id</code></td>
+              <td>Deletes a book by its id</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Example</h2>
+        <p>Body of a <code>POST /books</code> request (JSON):</p>
+        <p class="example"><code>{ "title": "1984", "author": "George Orwell" }</code></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Web System Development &middot; Module 05</p>
+    </footer>
+  </body>
+</html>
